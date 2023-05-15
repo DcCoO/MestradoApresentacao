@@ -26,6 +26,8 @@ public class GPUMesh : MonoBehaviour
 
         public Mesh mesh;
         public Material material;
+        public Vector3 offset;
+        public float normalOffset;
     }
     
     public Vector3 normalDisplacement;
@@ -82,7 +84,7 @@ public class GPUMesh : MonoBehaviour
 
         for (int i = 0; i < objects.Count; ++i)
         {
-            Info info = objects[i].GetObjectInfo();
+            Info info = objects[i].GetObjectInfo(ref layer);
             positions.AddRange(info.positions);
             normals.AddRange(info.normals);
             indices.AddRange(info.indices);
@@ -107,10 +109,11 @@ public class GPUMesh : MonoBehaviour
         // Indirect args
         if (layer.mesh != null)
         {
-            layer.args[0] = (uint)layer.mesh.GetIndexCount(0);
-            layer.args[1] = (uint)n;
-            layer.args[2] = (uint)layer.mesh.GetIndexStart(0);
-            layer.args[3] = (uint)layer.mesh.GetBaseVertex(0);
+            layer.args = new uint[] { layer.mesh.GetIndexCount(0), (uint) n, layer.mesh.GetIndexStart(0), layer.mesh.GetBaseVertex(0), 0 };
+            //layer.args[0] = (uint)layer.mesh.GetIndexCount(0);
+            //layer.args[1] = (uint)n;
+            //layer.args[2] = (uint)layer.mesh.GetIndexStart(0);
+            //layer.args[3] = (uint)layer.mesh.GetBaseVertex(0);
         }
         else
         {

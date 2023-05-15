@@ -4,29 +4,31 @@ public class GPUMeshObject : MonoBehaviour
 {
     public GPUMeshType meshLayer;
     public MeshFilter meshFilter;
-    public int randomSeed;
+    int randomSeed;
     public int instancesPerTriangle;
-    public float normalOffset;
     public int gridRowCount = 1;
-    public bool isFloor;
 
     Mesh mesh;
 
     void Awake()
     {
-        if(!isFloor) GetComponent<MeshRenderer>().shadowCastingMode = UnityEngine.Rendering.ShadowCastingMode.ShadowsOnly;
+        //if(!isFloor) GetComponent<MeshRenderer>().shadowCastingMode = UnityEngine.Rendering.ShadowCastingMode.ShadowsOnly;
         meshFilter = GetComponent<MeshFilter>();
         mesh = meshFilter.mesh;
         if (GPUMesh.meshes.ContainsKey(meshLayer)) GPUMesh.meshes[meshLayer].Add(this);
         else GPUMesh.meshes[meshLayer] = new System.Collections.Generic.List<GPUMeshObject> { this };
     }
 
+    private void Start()
+    {
+        
+    }
     /*private void Update()
     {
         DrawRays();
     }*/
 
-    public GPUMesh.Info GetObjectInfo()
+    public GPUMesh.Info GetObjectInfo(ref GPUMesh.GPUMeshLayer layer)
     {
         var vertices = mesh.vertices;
         var vertexNormals = mesh.normals;
@@ -38,9 +40,10 @@ public class GPUMeshObject : MonoBehaviour
         Vector3[] normals = new Vector3[n];
         float[] indices = new float[n];
 
-        System.Random random = new System.Random(randomSeed);
+        System.Random random = new System.Random(Random.Range(1, 100000));
 
         Vector3 normalDisplacement = GPUMesh.instance.normalDisplacement;
+        //if (meshLayer == GPUMeshType.TREE) normalDisplacement = Vector3.zero;
         int index = 0;
         Vector3 pos;
         var rot = Quaternion.Euler(meshFilter.transform.eulerAngles);
@@ -53,8 +56,8 @@ public class GPUMeshObject : MonoBehaviour
                 pos = GetRandomPointInTriangle(ref vertices[triangles[triangleIndex]], ref vertices[triangles[triangleIndex + 1]], ref vertices[triangles[triangleIndex + 2]], ref random);
                 //pos = (vertices[triangles[triangleIndex]] + vertices[triangles[triangleIndex + 1]] + vertices[triangles[triangleIndex + 2]]) / 3f;
                 normals[index] = rot * (vertexNormals[triangles[triangleIndex]] + vertexNormals[triangles[triangleIndex + 1]] + vertexNormals[triangles[triangleIndex + 2]]) / 3;
+                positions[index] = rot * Vector3.Scale(pos, meshFilter.transform.lossyScale) + meshFilter.transform.position + layer.offset + normals[index] * layer.normalOffset;
                 normals[index] += new Vector3(Random.Range(-normalDisplacement.x, normalDisplacement.x), Random.Range(-normalDisplacement.y, normalDisplacement.y), Random.Range(-normalDisplacement.z, normalDisplacement.z));
-                positions[index] = rot * Vector3.Scale(pos, meshFilter.transform.lossyScale) + meshFilter.transform.position + normals[index] * normalOffset;
                 indices[index++] = random.Next(gridRowCount);
             }
         }
@@ -62,12 +65,12 @@ public class GPUMeshObject : MonoBehaviour
         return new GPUMesh.Info(positions, normals, indices);
     }
 
-    void DrawRays()
+    /*void DrawRays()
     {
         var info = GetObjectInfo();
         for (int i = 0, len = info.positions.Length; i < len; ++i)
             Debug.DrawRay(info.positions[i], info.normals[i] * 0.03f, Color.red);
-    }
+    }*/
 
     Vector3 GetRandomPointInTriangle(ref Vector3 v1, ref Vector3 v2, ref Vector3 v3, ref System.Random random)
     {
