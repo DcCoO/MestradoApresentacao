@@ -291,6 +291,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock_05 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1576488453971893466, guid: a778b631c6253a04899cb31bad047c81,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a778b631c6253a04899cb31bad047c81, type: 3}
 --- !u!4 &30724691 stripped
@@ -386,6 +391,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock_05 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1576488453971893466, guid: a778b631c6253a04899cb31bad047c81,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a778b631c6253a04899cb31bad047c81, type: 3}
 --- !u!4 &30936512 stripped
@@ -410,6 +420,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Rock_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 7405846476849542632, guid: c6308cb7062fac34e8e50600086b12a1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7405846476849834440, guid: c6308cb7062fac34e8e50600086b12a1,
         type: 3}
@@ -586,6 +601,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ground_02 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1279437348525479949, guid: e2e682b966e3f644392ffbfab511e0e2,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1279437348525638701, guid: e2e682b966e3f644392ffbfab511e0e2,
         type: 3}
       propertyPath: m_RootOrder
@@ -679,10 +699,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   meshLayer: 0
   meshFilter: {fileID: 0}
-  instancesPerTriangle: 12
-  normalOffset: -0.5
+  instancesPerTriangle: 46
   gridRowCount: 4
-  isFloor: 1
 --- !u!1001 &116386024
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -755,6 +773,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stump_01
       objectReference: {fileID: 0}
+    - target: {fileID: 108507113624723981, guid: eebb56c82efbd8d4bb0eb6bd925a0e9d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6690580599928000713, guid: eebb56c82efbd8d4bb0eb6bd925a0e9d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7067936637415105213, guid: eebb56c82efbd8d4bb0eb6bd925a0e9d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eebb56c82efbd8d4bb0eb6bd925a0e9d, type: 3}
 --- !u!4 &116386025 stripped
@@ -779,6 +812,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Rock_01 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7405846476849542632, guid: c6308cb7062fac34e8e50600086b12a1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7405846476849834440, guid: c6308cb7062fac34e8e50600086b12a1,
         type: 3}
@@ -869,6 +907,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Rock_04 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8783306491908617939, guid: f02116c209ecd9e488fc4d2cd8996133,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8783306491909106419, guid: f02116c209ecd9e488fc4d2cd8996133,
         type: 3}
@@ -1043,12 +1086,22 @@ PrefabInstance:
     - target: {fileID: 1964985338444763491, guid: fd7c2993799517649a391a3115a9d1f7,
         type: 3}
       propertyPath: m_CastShadows
-      value: 3
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7667927870381868116, guid: fd7c2993799517649a391a3115a9d1f7,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8172080272054052225, guid: fd7c2993799517649a391a3115a9d1f7,
         type: 3}
       propertyPath: m_Name
       value: PTree
+      objectReference: {fileID: 0}
+    - target: {fileID: 8172080272054052225, guid: fd7c2993799517649a391a3115a9d1f7,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8800841920863682363, guid: fd7c2993799517649a391a3115a9d1f7,
         type: 3}
@@ -1154,9 +1207,7 @@ MonoBehaviour:
   meshLayer: 1
   meshFilter: {fileID: 0}
   instancesPerTriangle: 1
-  normalOffset: 0
   gridRowCount: 3
-  isFloor: 0
 --- !u!1001 &196120746
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1244,6 +1295,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock_03
       objectReference: {fileID: 0}
+    - target: {fileID: 4680757731160225450, guid: 0fde05fa0f3321942a21896ff4f0856f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0fde05fa0f3321942a21896ff4f0856f, type: 3}
 --- !u!4 &196120747 stripped
@@ -1259,6 +1315,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 331031347}
     m_Modifications:
+    - target: {fileID: 2804753311162611450, guid: f63762041a5e64b4a87c2d23351e4f3b,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3938205021890235797, guid: f63762041a5e64b4a87c2d23351e4f3b,
         type: 3}
       propertyPath: m_RootOrder
@@ -1319,10 +1380,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tree10
       objectReference: {fileID: 0}
+    - target: {fileID: 4462082302597207855, guid: f63762041a5e64b4a87c2d23351e4f3b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 5184265704806494567, guid: f63762041a5e64b4a87c2d23351e4f3b,
         type: 3}
       propertyPath: m_CastShadows
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f63762041a5e64b4a87c2d23351e4f3b, type: 3}
@@ -1353,9 +1419,7 @@ MonoBehaviour:
   meshLayer: 1
   meshFilter: {fileID: 0}
   instancesPerTriangle: 1
-  normalOffset: 0
   gridRowCount: 3
-  isFloor: 0
 --- !u!1001 &308198400
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1366,12 +1430,17 @@ PrefabInstance:
     - target: {fileID: 2949541854982829645, guid: 210603c6836563147ad263db0bfe9473,
         type: 3}
       propertyPath: m_CastShadows
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7475889141414924830, guid: 210603c6836563147ad263db0bfe9473,
         type: 3}
       propertyPath: m_Name
       value: Tree12
+      objectReference: {fileID: 0}
+    - target: {fileID: 7475889141414924830, guid: 210603c6836563147ad263db0bfe9473,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7851006961621190820, guid: 210603c6836563147ad263db0bfe9473,
         type: 3}
@@ -1428,6 +1497,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8988989008282596299, guid: 210603c6836563147ad263db0bfe9473,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 210603c6836563147ad263db0bfe9473, type: 3}
 --- !u!4 &308198401 stripped
@@ -1457,9 +1531,7 @@ MonoBehaviour:
   meshLayer: 1
   meshFilter: {fileID: 0}
   instancesPerTriangle: 1
-  normalOffset: 0
   gridRowCount: 3
-  isFloor: 0
 --- !u!1001 &310940999
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1471,6 +1543,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Rock_04
+      objectReference: {fileID: 0}
+    - target: {fileID: 8783306491908617939, guid: f02116c209ecd9e488fc4d2cd8996133,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8783306491909106419, guid: f02116c209ecd9e488fc4d2cd8996133,
         type: 3}
@@ -1737,6 +1814,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stump_01 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 108507113624723981, guid: eebb56c82efbd8d4bb0eb6bd925a0e9d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6690580599928000713, guid: eebb56c82efbd8d4bb0eb6bd925a0e9d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7067936637415105213, guid: eebb56c82efbd8d4bb0eb6bd925a0e9d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eebb56c82efbd8d4bb0eb6bd925a0e9d, type: 3}
 --- !u!4 &327231633 stripped
@@ -1878,12 +1970,16 @@ MonoBehaviour:
     args: 
     mesh: {fileID: 4300000, guid: de5dac56dfeb8a744a4bef4790be9c96, type: 2}
     material: {fileID: 2100000, guid: c368c9da78a02f84d9c03424814e267a, type: 2}
+    offset: {x: 0, y: 0, z: 0}
+    normalOffset: -0.25
   - layer: 1
     isInstancing: 1
     args: 
     mesh: {fileID: 4300000, guid: 010822648f45ad944a857b446614a312, type: 2}
     material: {fileID: 2100000, guid: 13c28adfa51ebd94db9a43b239b196ea, type: 2}
-  normalDisplacement: {x: 0, y: 0, z: 0}
+    offset: {x: 0, y: -0.5, z: 0}
+    normalOffset: 0.1
+  normalDisplacement: {x: 0.1, y: 0, z: 0.1}
 --- !u!1001 &363291728
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2244,12 +2340,22 @@ PrefabInstance:
     - target: {fileID: 3766839205842297221, guid: d4d58b2e20f44bb43909b5de8f0c6cd3,
         type: 3}
       propertyPath: m_CastShadows
-      value: 3
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7870594375262410356, guid: d4d58b2e20f44bb43909b5de8f0c6cd3,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8518852893487118241, guid: d4d58b2e20f44bb43909b5de8f0c6cd3,
         type: 3}
       propertyPath: m_Name
       value: Tree5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8518852893487118241, guid: d4d58b2e20f44bb43909b5de8f0c6cd3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 9039528465592479003, guid: d4d58b2e20f44bb43909b5de8f0c6cd3,
         type: 3}
@@ -2335,9 +2441,7 @@ MonoBehaviour:
   meshLayer: 1
   meshFilter: {fileID: 0}
   instancesPerTriangle: 1
-  normalOffset: 0
   gridRowCount: 3
-  isFloor: 0
 --- !u!1001 &458085957
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2424,6 +2528,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Rock_03 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4680757731160225450, guid: 0fde05fa0f3321942a21896ff4f0856f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0fde05fa0f3321942a21896ff4f0856f, type: 3}
@@ -2625,6 +2734,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ground_02 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1279437348525479949, guid: e2e682b966e3f644392ffbfab511e0e2,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1279437348525638701, guid: e2e682b966e3f644392ffbfab511e0e2,
         type: 3}
       propertyPath: m_RootOrder
@@ -2724,9 +2838,7 @@ MonoBehaviour:
   meshLayer: 0
   meshFilter: {fileID: 0}
   instancesPerTriangle: 12
-  normalOffset: -0.5
   gridRowCount: 4
-  isFloor: 1
 --- !u!1001 &624967773
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2738,6 +2850,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Rock_04 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8783306491908617939, guid: f02116c209ecd9e488fc4d2cd8996133,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8783306491909106419, guid: f02116c209ecd9e488fc4d2cd8996133,
         type: 3}
@@ -2829,10 +2946,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 331031347}
     m_Modifications:
+    - target: {fileID: 2942551955917193158, guid: 41be538eaa9680146a13638535f20c32,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3735444631307722259, guid: 41be538eaa9680146a13638535f20c32,
         type: 3}
       propertyPath: m_Name
       value: Tree9
+      objectReference: {fileID: 0}
+    - target: {fileID: 3735444631307722259, guid: 41be538eaa9680146a13638535f20c32,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4079460497111172265, guid: 41be538eaa9680146a13638535f20c32,
         type: 3}
@@ -2892,7 +3019,7 @@ PrefabInstance:
     - target: {fileID: 4890705183292830687, guid: 41be538eaa9680146a13638535f20c32,
         type: 3}
       propertyPath: m_CastShadows
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 41be538eaa9680146a13638535f20c32, type: 3}
@@ -2923,9 +3050,7 @@ MonoBehaviour:
   meshLayer: 1
   meshFilter: {fileID: 0}
   instancesPerTriangle: 1
-  normalOffset: 0
   gridRowCount: 3
-  isFloor: 0
 --- !u!1001 &648889921
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2998,6 +3123,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ground_03 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 8957304962413023527, guid: 3f9b178ccd3b86f4ebbfc1f5a2815e56,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3f9b178ccd3b86f4ebbfc1f5a2815e56, type: 3}
 --- !u!4 &648889922 stripped
@@ -3027,9 +3157,7 @@ MonoBehaviour:
   meshLayer: 0
   meshFilter: {fileID: 0}
   instancesPerTriangle: 12
-  normalOffset: -0.5
   gridRowCount: 4
-  isFloor: 1
 --- !u!1001 &668827589
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3102,6 +3230,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ground_03
       objectReference: {fileID: 0}
+    - target: {fileID: 8957304962413023527, guid: 3f9b178ccd3b86f4ebbfc1f5a2815e56,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3f9b178ccd3b86f4ebbfc1f5a2815e56, type: 3}
 --- !u!4 &668827590 stripped
@@ -3131,9 +3264,7 @@ MonoBehaviour:
   meshLayer: 0
   meshFilter: {fileID: 0}
   instancesPerTriangle: 12
-  normalOffset: -0.5
   gridRowCount: 4
-  isFloor: 1
 --- !u!1001 &674723165
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3319,12 +3450,17 @@ PrefabInstance:
     - target: {fileID: 2054716774225640455, guid: 65d8f53b29d64314caf16caeba27d51c,
         type: 3}
       propertyPath: m_CastShadows
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2830557113170853663, guid: 65d8f53b29d64314caf16caeba27d51c,
         type: 3}
       propertyPath: m_Name
       value: Tree7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2830557113170853663, guid: 65d8f53b29d64314caf16caeba27d51c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3171651370695566757, guid: 65d8f53b29d64314caf16caeba27d51c,
         type: 3}
@@ -3381,6 +3517,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4343955773402865354, guid: 65d8f53b29d64314caf16caeba27d51c,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 65d8f53b29d64314caf16caeba27d51c, type: 3}
 --- !u!4 &704082167 stripped
@@ -3410,9 +3551,7 @@ MonoBehaviour:
   meshLayer: 1
   meshFilter: {fileID: 0}
   instancesPerTriangle: 1
-  normalOffset: 0
   gridRowCount: 3
-  isFloor: 0
 --- !u!1001 &745635005
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3484,6 +3623,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Rock_03
+      objectReference: {fileID: 0}
+    - target: {fileID: 4680757731160225450, guid: 0fde05fa0f3321942a21896ff4f0856f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0fde05fa0f3321942a21896ff4f0856f, type: 3}
@@ -3775,6 +3919,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ground_01 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1686021177304871604, guid: ebee340de387f334f9ac44e044abd8fb,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1686021177305034388, guid: ebee340de387f334f9ac44e044abd8fb,
         type: 3}
       propertyPath: m_RootOrder
@@ -3874,9 +4023,7 @@ MonoBehaviour:
   meshLayer: 0
   meshFilter: {fileID: 0}
   instancesPerTriangle: 12
-  normalOffset: -0.5
   gridRowCount: 4
-  isFloor: 1
 --- !u!1001 &933204530
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4112,6 +4259,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock_05 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 1576488453971893466, guid: a778b631c6253a04899cb31bad047c81,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a778b631c6253a04899cb31bad047c81, type: 3}
 --- !u!4 &1056159472 stripped
@@ -4136,6 +4288,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Ground_02
+      objectReference: {fileID: 0}
+    - target: {fileID: 1279437348525479949, guid: e2e682b966e3f644392ffbfab511e0e2,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1279437348525638701, guid: e2e682b966e3f644392ffbfab511e0e2,
         type: 3}
@@ -4221,9 +4378,7 @@ MonoBehaviour:
   meshLayer: 0
   meshFilter: {fileID: 0}
   instancesPerTriangle: 12
-  normalOffset: -0.5
   gridRowCount: 4
-  isFloor: 1
 --- !u!1001 &1101803693
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4326,6 +4481,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock_04 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 8783306491908617939, guid: f02116c209ecd9e488fc4d2cd8996133,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 8783306491909106419, guid: f02116c209ecd9e488fc4d2cd8996133,
         type: 3}
       propertyPath: m_RootOrder
@@ -4421,6 +4581,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tree8
       objectReference: {fileID: 0}
+    - target: {fileID: 31782086746102901, guid: 74b7846211e63a64f87c237513b251f9,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 809303295369184975, guid: 74b7846211e63a64f87c237513b251f9,
         type: 3}
       propertyPath: m_RootOrder
@@ -4476,10 +4641,15 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1977104234546953632, guid: 74b7846211e63a64f87c237513b251f9,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2977867239336523313, guid: 74b7846211e63a64f87c237513b251f9,
         type: 3}
       propertyPath: m_CastShadows
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 74b7846211e63a64f87c237513b251f9, type: 3}
@@ -4510,9 +4680,7 @@ MonoBehaviour:
   meshLayer: 1
   meshFilter: {fileID: 0}
   instancesPerTriangle: 1
-  normalOffset: 0
   gridRowCount: 3
-  isFloor: 0
 --- !u!1001 &1113124494
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4524,6 +4692,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Branch_01 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1493958779012120596, guid: b9de24523a11d714db3851b5f0f9d527,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1493958779012619316, guid: b9de24523a11d714db3851b5f0f9d527,
         type: 3}
@@ -4644,7 +4817,7 @@ Camera:
     width: 1
     height: 1
   near clip plane: -50
-  far clip plane: 100
+  far clip plane: 50
   field of view: 60
   orthographic: 1
   orthographic size: 5
@@ -4873,10 +5046,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tree1
       objectReference: {fileID: 0}
+    - target: {fileID: 5431472554456696141, guid: da6589b4faf0fae4bb42e9b6acb58eb4,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5791782996071900312, guid: da6589b4faf0fae4bb42e9b6acb58eb4,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7079341377577105008, guid: da6589b4faf0fae4bb42e9b6acb58eb4,
         type: 3}
       propertyPath: m_CastShadows
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: da6589b4faf0fae4bb42e9b6acb58eb4, type: 3}
@@ -4907,9 +5090,7 @@ MonoBehaviour:
   meshLayer: 1
   meshFilter: {fileID: 0}
   instancesPerTriangle: 1
-  normalOffset: 0
   gridRowCount: 3
-  isFloor: 0
 --- !u!1001 &1251307403
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4920,12 +5101,17 @@ PrefabInstance:
     - target: {fileID: 1518521093646849296, guid: a8dd93ee2b080c743ac1a86f058d5c9d,
         type: 3}
       propertyPath: m_CastShadows
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5000620676498126312, guid: a8dd93ee2b080c743ac1a86f058d5c9d,
         type: 3}
       propertyPath: m_Name
       value: Tree14
+      objectReference: {fileID: 0}
+    - target: {fileID: 5000620676498126312, guid: a8dd93ee2b080c743ac1a86f058d5c9d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5633465122037215058, guid: a8dd93ee2b080c743ac1a86f058d5c9d,
         type: 3}
@@ -4982,6 +5168,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6801907077566125117, guid: a8dd93ee2b080c743ac1a86f058d5c9d,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a8dd93ee2b080c743ac1a86f058d5c9d, type: 3}
 --- !u!4 &1251307404 stripped
@@ -5011,9 +5202,7 @@ MonoBehaviour:
   meshLayer: 1
   meshFilter: {fileID: 0}
   instancesPerTriangle: 1
-  normalOffset: 0
   gridRowCount: 3
-  isFloor: 0
 --- !u!1001 &1258131546
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5021,10 +5210,19 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 331031347}
     m_Modifications:
+    - target: {fileID: 2541591932474649, guid: 9c4c61e270276a5468a55b549c866da3, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3144735210857376668, guid: 9c4c61e270276a5468a55b549c866da3,
         type: 3}
       propertyPath: m_Name
       value: Tree4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3144735210857376668, guid: 9c4c61e270276a5468a55b549c866da3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4427294767983932195, guid: 9c4c61e270276a5468a55b549c866da3,
         type: 3}
@@ -5084,7 +5282,7 @@ PrefabInstance:
     - target: {fileID: 6941459900262111514, guid: 9c4c61e270276a5468a55b549c866da3,
         type: 3}
       propertyPath: m_CastShadows
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9c4c61e270276a5468a55b549c866da3, type: 3}
@@ -5115,9 +5313,7 @@ MonoBehaviour:
   meshLayer: 1
   meshFilter: {fileID: 0}
   instancesPerTriangle: 1
-  normalOffset: 0
   gridRowCount: 3
-  isFloor: 0
 --- !u!1001 &1280485125
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5300,6 +5496,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock_02
       objectReference: {fileID: 0}
+    - target: {fileID: 5202732821079448320, guid: cebfacc247a640945a2c30b442202fca,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cebfacc247a640945a2c30b442202fca, type: 3}
 --- !u!4 &1293776775 stripped
@@ -5394,6 +5595,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Rock_02 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5202732821079448320, guid: cebfacc247a640945a2c30b442202fca,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cebfacc247a640945a2c30b442202fca, type: 3}
@@ -5510,6 +5716,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PTree3
       objectReference: {fileID: 0}
+    - target: {fileID: 368064741635824398, guid: ede7423b06e7ce94f80c464ba7258693,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1031447744129843636, guid: ede7423b06e7ce94f80c464ba7258693,
         type: 3}
       propertyPath: m_RootOrder
@@ -5585,10 +5796,15 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2169429481417292507, guid: ede7423b06e7ce94f80c464ba7258693,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7089422169327764558, guid: ede7423b06e7ce94f80c464ba7258693,
         type: 3}
       propertyPath: m_CastShadows
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ede7423b06e7ce94f80c464ba7258693, type: 3}
@@ -5619,9 +5835,7 @@ MonoBehaviour:
   meshLayer: 1
   meshFilter: {fileID: 0}
   instancesPerTriangle: 1
-  normalOffset: 0
   gridRowCount: 3
-  isFloor: 0
 --- !u!1 &1392514914
 GameObject:
   m_ObjectHideFlags: 0
@@ -5875,6 +6089,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stump_01 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 108507113624723981, guid: eebb56c82efbd8d4bb0eb6bd925a0e9d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6690580599928000713, guid: eebb56c82efbd8d4bb0eb6bd925a0e9d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7067936637415105213, guid: eebb56c82efbd8d4bb0eb6bd925a0e9d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eebb56c82efbd8d4bb0eb6bd925a0e9d, type: 3}
 --- !u!4 &1415677494 stripped
@@ -5894,6 +6123,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Ground_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 1686021177304871604, guid: ebee340de387f334f9ac44e044abd8fb,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1686021177305034388, guid: ebee340de387f334f9ac44e044abd8fb,
         type: 3}
@@ -5984,9 +6218,7 @@ MonoBehaviour:
   meshLayer: 0
   meshFilter: {fileID: 0}
   instancesPerTriangle: 12
-  normalOffset: -0.5
   gridRowCount: 4
-  isFloor: 1
 --- !u!1001 &1447949763
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6058,6 +6290,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Rock_05 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1576488453971893466, guid: a778b631c6253a04899cb31bad047c81,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a778b631c6253a04899cb31bad047c81, type: 3}
@@ -6172,12 +6409,17 @@ PrefabInstance:
     - target: {fileID: 7140693810719274225, guid: c747f70c9e0faec43b21fd8348b5de2f,
         type: 3}
       propertyPath: m_CastShadows
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7172288047081122596, guid: c747f70c9e0faec43b21fd8348b5de2f,
         type: 3}
       propertyPath: m_Name
       value: Tree3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7172288047081122596, guid: c747f70c9e0faec43b21fd8348b5de2f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7548812902405026206, guid: c747f70c9e0faec43b21fd8348b5de2f,
         type: 3}
@@ -6234,6 +6476,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8685730136611572465, guid: c747f70c9e0faec43b21fd8348b5de2f,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c747f70c9e0faec43b21fd8348b5de2f, type: 3}
 --- !u!4 &1486825780 stripped
@@ -6263,9 +6510,7 @@ MonoBehaviour:
   meshLayer: 1
   meshFilter: {fileID: 0}
   instancesPerTriangle: 1
-  normalOffset: 0
   gridRowCount: 3
-  isFloor: 0
 --- !u!1001 &1506864563
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6338,6 +6583,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ground_03 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8957304962413023527, guid: 3f9b178ccd3b86f4ebbfc1f5a2815e56,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3f9b178ccd3b86f4ebbfc1f5a2815e56, type: 3}
 --- !u!4 &1506864564 stripped
@@ -6367,9 +6617,7 @@ MonoBehaviour:
   meshLayer: 0
   meshFilter: {fileID: 0}
   instancesPerTriangle: 12
-  normalOffset: -0.5
   gridRowCount: 4
-  isFloor: 1
 --- !u!1001 &1518431092
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6456,6 +6704,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Rock_03 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4680757731160225450, guid: 0fde05fa0f3321942a21896ff4f0856f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0fde05fa0f3321942a21896ff4f0856f, type: 3}
@@ -6625,6 +6878,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 331031347}
     m_Modifications:
+    - target: {fileID: 446610635203258136, guid: 6ace267d6091af04390373bf8f94bebb,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1619469426785803383, guid: 6ace267d6091af04390373bf8f94bebb,
         type: 3}
       propertyPath: m_RootOrder
@@ -6685,10 +6943,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tree13
       objectReference: {fileID: 0}
+    - target: {fileID: 2103834623881250509, guid: 6ace267d6091af04390373bf8f94bebb,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 5329699817776869549, guid: 6ace267d6091af04390373bf8f94bebb,
         type: 3}
       propertyPath: m_CastShadows
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6ace267d6091af04390373bf8f94bebb, type: 3}
@@ -6719,9 +6982,7 @@ MonoBehaviour:
   meshLayer: 1
   meshFilter: {fileID: 0}
   instancesPerTriangle: 1
-  normalOffset: 0
   gridRowCount: 3
-  isFloor: 0
 --- !u!1001 &1605254774
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6738,6 +6999,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Ground_02 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1279437348525479949, guid: e2e682b966e3f644392ffbfab511e0e2,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1279437348525638701, guid: e2e682b966e3f644392ffbfab511e0e2,
         type: 3}
@@ -6838,9 +7104,7 @@ MonoBehaviour:
   meshLayer: 0
   meshFilter: {fileID: 0}
   instancesPerTriangle: 12
-  normalOffset: -0.5
   gridRowCount: 4
-  isFloor: 1
 --- !u!1001 &1642455767
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7041,7 +7305,12 @@ PrefabInstance:
     - target: {fileID: 3287236015760793499, guid: c060fcc84236b684db48d5ff04e9d24b,
         type: 3}
       propertyPath: m_CastShadows
-      value: 3
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4777262832105457432, guid: c060fcc84236b684db48d5ff04e9d24b,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5910714891799198839, guid: c060fcc84236b684db48d5ff04e9d24b,
         type: 3}
@@ -7103,6 +7372,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tree6
       objectReference: {fileID: 0}
+    - target: {fileID: 6434732699545315021, guid: c060fcc84236b684db48d5ff04e9d24b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c060fcc84236b684db48d5ff04e9d24b, type: 3}
 --- !u!4 &1706776715 stripped
@@ -7132,9 +7406,7 @@ MonoBehaviour:
   meshLayer: 1
   meshFilter: {fileID: 0}
   instancesPerTriangle: 1
-  normalOffset: 0
   gridRowCount: 3
-  isFloor: 0
 --- !u!1001 &1736731160
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7222,6 +7494,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock_03 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 4680757731160225450, guid: 0fde05fa0f3321942a21896ff4f0856f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0fde05fa0f3321942a21896ff4f0856f, type: 3}
 --- !u!4 &1736731161 stripped
@@ -7237,10 +7514,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 331031347}
     m_Modifications:
+    - target: {fileID: 3166954695656198494, guid: 999add1f2e8a519499aa0df84259c22b,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3527361893242531979, guid: 999add1f2e8a519499aa0df84259c22b,
         type: 3}
       propertyPath: m_Name
       value: Tree2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3527361893242531979, guid: 999add1f2e8a519499aa0df84259c22b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4303299775660829233, guid: 999add1f2e8a519499aa0df84259c22b,
         type: 3}
@@ -7300,7 +7587,7 @@ PrefabInstance:
     - target: {fileID: 7322798327649026827, guid: 999add1f2e8a519499aa0df84259c22b,
         type: 3}
       propertyPath: m_CastShadows
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 999add1f2e8a519499aa0df84259c22b, type: 3}
@@ -7331,9 +7618,7 @@ MonoBehaviour:
   meshLayer: 1
   meshFilter: {fileID: 0}
   instancesPerTriangle: 1
-  normalOffset: 0
   gridRowCount: 3
-  isFloor: 0
 --- !u!1001 &1751282041
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7591,6 +7876,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock_05
       objectReference: {fileID: 0}
+    - target: {fileID: 1576488453971893466, guid: a778b631c6253a04899cb31bad047c81,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a778b631c6253a04899cb31bad047c81, type: 3}
 --- !u!4 &1776296784 stripped
@@ -7686,6 +7976,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock_03 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4680757731160225450, guid: 0fde05fa0f3321942a21896ff4f0856f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0fde05fa0f3321942a21896ff4f0856f, type: 3}
 --- !u!4 &1817643098 stripped
@@ -7710,6 +8005,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Ground_02 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1279437348525479949, guid: e2e682b966e3f644392ffbfab511e0e2,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1279437348525638701, guid: e2e682b966e3f644392ffbfab511e0e2,
         type: 3}
@@ -7810,9 +8110,7 @@ MonoBehaviour:
   meshLayer: 0
   meshFilter: {fileID: 0}
   instancesPerTriangle: 12
-  normalOffset: -0.5
   gridRowCount: 4
-  isFloor: 1
 --- !u!1001 &1931675047
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7823,12 +8121,17 @@ PrefabInstance:
     - target: {fileID: 4719715631728963618, guid: f19e73b4b543a6a42877cf2e1c8d79d2,
         type: 3}
       propertyPath: m_CastShadows
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7148908104109415096, guid: f19e73b4b543a6a42877cf2e1c8d79d2,
         type: 3}
       propertyPath: m_Name
       value: Tree11
+      objectReference: {fileID: 0}
+    - target: {fileID: 7148908104109415096, guid: f19e73b4b543a6a42877cf2e1c8d79d2,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7529410168403656706, guid: f19e73b4b543a6a42877cf2e1c8d79d2,
         type: 3}
@@ -7885,6 +8188,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8662386341561367405, guid: f19e73b4b543a6a42877cf2e1c8d79d2,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f19e73b4b543a6a42877cf2e1c8d79d2, type: 3}
 --- !u!4 &1931675048 stripped
@@ -7914,9 +8222,7 @@ MonoBehaviour:
   meshLayer: 1
   meshFilter: {fileID: 0}
   instancesPerTriangle: 1
-  normalOffset: 0
   gridRowCount: 3
-  isFloor: 0
 --- !u!1001 &1958137738
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8104,6 +8410,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ground_01 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1686021177304871604, guid: ebee340de387f334f9ac44e044abd8fb,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1686021177305034388, guid: ebee340de387f334f9ac44e044abd8fb,
         type: 3}
       propertyPath: m_RootOrder
@@ -8203,9 +8514,7 @@ MonoBehaviour:
   meshLayer: 0
   meshFilter: {fileID: 0}
   instancesPerTriangle: 12
-  normalOffset: -0.5
   gridRowCount: 4
-  isFloor: 1
 --- !u!1001 &2021558158
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8292,6 +8601,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Rock_05 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1576488453971893466, guid: a778b631c6253a04899cb31bad047c81,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a778b631c6253a04899cb31bad047c81, type: 3}
@@ -8470,6 +8784,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2079483091}
+  - component: {fileID: 2079483092}
   m_Layer: 0
   m_Name: Cameras
   m_TagString: Untagged
@@ -8493,6 +8808,47 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!114 &2079483092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2079483090}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61aa69be33817004784211ea43da421e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentPos: {x: 0, y: 0, z: 0}
+  speed: 6
+  rotationSpeed: 8
+  rotationDuration: 0.5
+  rotationCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 2
+      outSlope: 2
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  snapping: 1
 --- !u!1001 &2114340158
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8503,7 +8859,12 @@ PrefabInstance:
     - target: {fileID: 63490782133946877, guid: aacac2346638f83408100218ed3a51aa,
         type: 3}
       propertyPath: m_CastShadows
-      value: 3
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7202665361216977927, guid: aacac2346638f83408100218ed3a51aa,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8340153178608027496, guid: aacac2346638f83408100218ed3a51aa,
         type: 3}
@@ -8585,6 +8946,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PTree2
       objectReference: {fileID: 0}
+    - target: {fileID: 8716151432219631058, guid: aacac2346638f83408100218ed3a51aa,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aacac2346638f83408100218ed3a51aa, type: 3}
 --- !u!4 &2114340159 stripped
@@ -8614,9 +8980,7 @@ MonoBehaviour:
   meshLayer: 1
   meshFilter: {fileID: 0}
   instancesPerTriangle: 1
-  normalOffset: 0
   gridRowCount: 3
-  isFloor: 0
 --- !u!1001 &2130829083
 PrefabInstance:
   m_ObjectHideFlags: 0

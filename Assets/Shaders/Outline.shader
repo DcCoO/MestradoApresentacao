@@ -91,7 +91,7 @@ Shader "Unlit/Test"
                     float3 normal;
                     DecodeDepthNormal(tex2D(_CameraDepthNormalsTexture, uv), dummy, normal);
 
-                    if(abs(depth - filteredDepth) > 0.005) return float4(color, 1);
+                    if(depth - filteredDepth > 0.005) return float4(color, 1);
                     if(Angle(filteredNormal, float3(0,0,0)) < 0.01) return float4(color, 1);
                     
                     float depthDiff = abs(depth - filteredDepth);
@@ -130,7 +130,7 @@ Shader "Unlit/Test"
                     half dnl = lerp(1.4, 1.1, clarity);
                     //half nnl = nl < 0 ? 1.4 : 0.7;
                     //half nnl = lerp(0.6, 0.9, clarity);
-                    half nnl = nl > 0.5 ? lerp(1.5, 1.1, clarity) : lerp(0.7, 0.9, clarity);
+                    half nnl = nl < 0.5 ? lerp(1.5, 1.1, clarity) : lerp(0.7, 0.9, clarity);
                     
                     //testing silhouette
                     /*if (filteredDepth < 0.96) {
@@ -152,13 +152,14 @@ Shader "Unlit/Test"
                     //}
                             //return float4(dnl * color, 1);
 
-
+                    
+                    //return float4(1, 0, 0, 1);
 
 
                     //testing depth
                     [unroll]
                     for (i = 0; i < 4; ++i)
-                        if (depth - depths[i] > _MaxDepthDiff && Angle(filteredNormals[i], float3(0,0,0)) < 0.01) {
+                        if (depth - depths[i] > _MaxDepthDiff) {
                             //return float4(1, 0, 0, 1);
                             return float4(dnl * color, 1);
                         }
@@ -176,6 +177,7 @@ Shader "Unlit/Test"
                                 return float4(nnl * color, 1);
                             }
                         }*/
+
 
                     for (i = 0; i < 4; ++i)
                         if (Angle(filteredNormal, filteredNormals[i]) > _MaxNormalDiff) {

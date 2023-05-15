@@ -10,8 +10,7 @@ Material:
   m_Name: PTree#3
   m_Shader: {fileID: -6465566751694194690, guid: fda71fbf0f1669440b2af313034ba2e7,
     type: 3}
-  m_ValidKeywords:
-  - _SPECULAR
+  m_ValidKeywords: []
   m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -24,6 +23,10 @@ Material:
     m_TexEnvs:
     - Texture2D_B6FB32FF:
         m_Texture: {fileID: 2800000, guid: 4de630452063de545a77d20d705bf334, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BaseMap:
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Base_Map:
@@ -70,6 +73,10 @@ Material:
         m_Texture: {fileID: 2800000, guid: 0f9179e490bec294f9b0aa6c0a1a6f85, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _SpecGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _Texture:
         m_Texture: {fileID: 2800000, guid: 97b7194c993a05d4e9dfdc31646f4c30, type: 3}
         m_Scale: {x: 1, y: 1}
@@ -101,10 +108,17 @@ Material:
     - Vector1_9D92ACE3: 0.05
     - Vector1_BFD8FED2: 0.16
     - Vector1_F7EECDC0: 0.5
+    - _AlphaClip: 0
+    - _Blend: 0
     - _BumpScale: 1
+    - _ClearCoatMask: 0
+    - _ClearCoatSmoothness: 0
+    - _Cull: 2
     - _Cutoff: 0.5
+    - _DetailAlbedoMapScale: 1
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
+    - _EnvironmentReflections: 1
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
@@ -117,13 +131,15 @@ Material:
     - _Parallax: 0.02
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _SPECULAR: 1
+    - _ReceiveShadows: 1
+    - _SPECULAR: 0
     - _Scale1: 1.08
     - _Smoothness: 0.18
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _Strength1: 0
+    - _Surface: 0
     - _TimeScale1: 0.1
     - _TransAmbient: 0
     - _TransDirect: 1
@@ -133,6 +149,7 @@ Material:
     - _Translucency: 5
     - _Translucent: 1
     - _UVSec: 0
+    - _WorkflowMode: 1
     - _ZWrite: 1
     - __dirty: 1
     - _time: 0.1
@@ -140,9 +157,11 @@ Material:
     - Color_F6E82D54: {r: 0.5254902, g: 0.7058824, b: 0.59066135, a: 0}
     - Vector3_18D5AB93: {r: 0, g: 0, b: 0, a: 0}
     - Vector3_C5A0693C: {r: 0, g: 0, b: 0, a: 0}
-    - _Base_Color: {r: 0.41240126, g: 0.7075472, b: 0.24363652, a: 0}
-    - _Color: {r: 0, g: 0.3764706, b: 0.23921569, a: 1}
+    - _BaseColor: {r: 0.4117647, g: 0.7058824, b: 0.24313726, a: 0}
+    - _Base_Color: {r: 0.21568628, g: 0.54901963, b: 0.15294118, a: 0}
+    - _Color: {r: 0.41176468, g: 0.7058823, b: 0.24313721, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []
 --- !u!114 &4077891389523424727
 MonoBehaviour:
